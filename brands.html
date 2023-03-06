@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Bag Guys</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="w3.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/1c6db54935.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Main content-->
+        <header>
+            <div class="logo"><a href="home.html"><img src="logo.jpg"></a></div>
+            <nav class="navigation">
+                <i class="fa-solid fa-xmark option-close" onclick="optionClose()"></i>
+                <ul>
+                    <li><a href="home.html">Home<span></span></a></li>
+                    <li><a href="about.html">About Us<span></span></a></li>
+                    <li><a href="brands.html">Brands <i class="fa-solid fa-angle-down"></i><span></span></a>
+                        <div class="brands">
+                            <p><a href="brands.html#Hawk">Hawk<span></span></a></p>
+                            <p><a href="brands.html#Jansport">Jansport<span></span></a></p>
+                            <p><a href="brands.html#Puma">Puma<span></span></a></p>
+                            <p><a href="brands.html#Nike">Nike<span></span></a></p>
+                         </div> 
+                    </li>
+                    <li><a href="contactUs.html">Contact us<span></span></a></li>
+                </ul>
+                <i class="fa-solid fa-cart-shopping cart-icon" onclick="cartOpen()">
+                    <div class="red-circle">
+                        <div id="total">0</div>
+                    </div>
+                </i>
+            </nav>
+            <div class="option-open"><i class="fa-solid fa-bars" onclick="optionOpen()"></i></div>
+        </header>
+        <!-- Cart -->
+        <div class="cart w3-card">
+            <h2 class="cart-title">Your Cart</h2>
+            <!-- Cart Content -->
+            <div class="cart-content">
+
+               
+            </div>
+            <!-- Total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price"></div>
+            </div>
+            <!-- Buy Button -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- close -->
+            <i class="fa-solid fa-xmark" id="close-cart" onclick="cartClose()"></i>
+        </div>
+
+
+        
+        <!--brands front-->
+        <div class="front-bag-brands-container">
+            <div class="text">
+                <h1>BAGS</h1>
+            </div>
+        </div>
+
+
+        <!--Hawk Products-->
+        <div class="Hawks-container" id="Hawk">
+            <div>
+                <div class="title" data-aos="fade-right">
+                    <h1>Hawk Products</h1>
+                </div>
+                <div class="bag-items">
+                    <div class="w3-card card" id="drake" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Hawk/1.1.webp" alt="" class="product-img"></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Hawk 2.0</p>
+                            <div class="price-cart">
+                                <p class="price" price="2200">Php 2,200.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Hawk/2.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Hawk Deepblue</p>
+                            <div class="price-cart">
+                                <p class="price" price="1200">Php 1,200.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Hawk/3.2.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Hawk Mamba</p>
+                            <div class="price-cart">
+                                <p class="price" price="2999">Php 2,999.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Hawk/4.2.webp" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Hawk Watch</p>
+                            <div class="price-cart">
+                                <p class="price" price="1350">Php 1,350.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" id="kdAuntPearl" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Hawk/5.2.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Hawk Mamba 2.0</p>
+                            <div class="price-cart">
+                                <p class="price" price="3500">Php 3,500.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Hawk/6.2.jpeg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Hawk Spiral</p>
+                            <div class="price-cart">
+                                <p class="price" price="1400">Php 1,400.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Jansport Products-->
+        <div class="jansport-container" id="jansport">
+            <div>
+                <div class="title" data-aos="fade-right">
+                    <h1>Jansport Products</h1>
+                </div>
+                <div class="bag-items">
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Jansport/7.webp" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Jansport Hiking Bag pack</p>
+                            <div class="price-cart">
+                                <p class="price" price="3200">Php 3,200.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Jansport/8.2.webp" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Jansport Hiking Backpack V2</p> 
+                            <div class="price-cart">
+                                <p class="price" price="3499">Php 3,499.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Jansport/9.2.webp" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Jansport Style</p>
+                            <div class="price-cart">
+                                <p class="price" price="1899">Php 1,899.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Jansport/10.1.webp" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Jansport Brown</p>
+                            <div class="price-cart">
+                                <p class="price" price="1799">Php 1,799.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Jansport/11.jpeg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Jansport Galaxy</p>
+                            <div class="price-cart">
+                                <p class="price" price="2879">Php 2,879.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Jansport/12.webp" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Bag pack</p>
+                            <div class="price-cart">
+                                <p class="price" price="1499">Php 1,499.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Puma Products-->
+        <div class="Puma-container" id="puma">
+            <div>
+                <div class="title" data-aos="fade-right">
+                    <h1>Puma Products</h1>
+                </div>
+                <div class="bag-items">
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Puma/19.2.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Puma K10</p>
+                            <div class="price-cart">
+                                <p class="price" price="1199">Php 1,199.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" id="pokemon" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Puma/20.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Puma Jaguar</p>
+                            <div class="price-cart">
+                                <p class="price" price="2967">Php 2,967.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Puma/21.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Puma The Panther</p>
+                            <div class="price-cart">
+                                <p class="price" price="3000">Php 3,000.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Puma/22.2.jpeg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Puma Sky</p>
+                            <div class="price-cart">
+                                <p class="price" price="1549">Php 1,549.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Puma/23.1.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Puma Camouflage</p>
+                            <div class="price-cart">
+                                <p class="price" price="1499">Php 1,499.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Puma/24.jpg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Puma Black</p>
+                            <div class="price-cart">
+                                <p class="price" price="1600">Php 1,600.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Nike Products-->
+        <div class="Nike-container" id="nike">
+            <div>
+                <div class="title" data-aos="fade-right">
+                    <h1>Nike Products</h1>
+                </div>
+                <div class="bag-items">
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Nike/13.webp" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Nike Black</p>
+                            <div class="price-cart">
+                                <p class="price" price="1539">Php 1,539.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Nike/14.2.jpeg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Nike Aesthetic</p>
+                            <div class="price-cart">
+                                <p class="price" price="2500">Php 2,500.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Nike/15.2.jpeg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Nike Sports</p>
+                            <div class="price-cart">
+                                <p class="price" price="1695">Php 1,695.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Nike/16.2.jpeg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Nike Phantom</p>
+                            <div class="price-cart">
+                                <p class="price" price="1275">Php 1,275.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Nike/17.1.jpeg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Nike Ocean</p>
+                            <div class="price-cart">
+                                <p class="price" price="1500">Php 1,500.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                        <div class="image-container"><img src="Nike/18.2.jpeg" alt=""></div>
+                        <div class="desciption">
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                            </div>
+                            <p class="bag-name">Nike Belt bag</p>
+                            <div class="price-cart">
+                                <p class="price" price="1175">Php 1,175.00</p>
+                                <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer>
+            <div class="footer-contains">
+                <div class="logo">
+                    <img src="logo.jpg">
+                    <p>Style is always in fashion</p>
+                </div>
+                <div class="customer-channels">
+                    <h3>Customer Channels</h3>
+                    <p><a href="Order and deliver.html">Order and Deliver</a></p>
+                </div>
+                <div class="terms-and-conditions">
+                    <h3>Terms and Condition</h3>
+                    <p><a href="Cancellation.html">Cancellation Policy</a></p>
+                    <p><a href="refund.html">Refund Policy</a></p>
+                    <p><a href="return and exchange.html">Return and Exchange</a></p>
+                    <p><a href="shipping.html">Shipping Policy</a></p>
+                    <p><a href="terms and condition.html">Terms of Use</a></p>
+                </div>
+                <div class="join-us">
+                    <h3>Join Us</h3>
+                    <p>Join our mailing list for updates</p>
+                    <div class="joined-message">Thank You for Joining!!</div>
+                    <div class="email-contain">
+                        <form>
+                            <input type="email" id="email-updates" placeholder="email@example.com" required>
+                            <button type="submit" onclick="joinUs()"><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <p>© 2023, <a href="#">CRAM EIVRAH</a>.</p>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="main.js"></script>
+    </body>
+</html>

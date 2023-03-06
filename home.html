@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Bag Guys</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="w3.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/1c6db54935.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Main content-->
+        <header>
+            <div class="logo"><a href="home.html"><img src="logo.jpg"></a></div>
+            <nav class="navigation">
+                <i class="fa-solid fa-xmark option-close" onclick="optionClose()"></i>
+                <ul>
+                    <li><a href="home.html">Home<span></span></a></li>
+                    <li><a href="about.html">About Us<span></span></a></li>
+                    <li><a href="brands.html">Brands <i class="fa-solid fa-angle-down"></i><span></span></a>
+                        <div class="brands">
+                            <p><a href="brands.html#Hawk">Hawk<span></span></a></p>
+                            <p><a href="brands.html#Jansport">Jansport<span></span></a></p>
+                            <p><a href="brands.html#Puma">Puma<span></span></a></p>
+                            <p><a href="brands.html#Nike">Nike<span></span></a></p>
+                         </div> 
+                    </li>
+                    <li><a href="contactUs.html">Contact us<span></span></a></li>
+                </ul>
+                <i class="fa-solid fa-cart-shopping cart-icon" onclick="cartOpen()">
+                    <div class="red-circle">
+                        <div id="total">0</div>
+                    </div>
+                </i>
+            </nav>
+            <div class="option-open"><i class="fa-solid fa-bars" onclick="optionOpen()"></i></div>
+        </header>
+        <!-- Cart -->
+        <div class="cart w3-card">
+            <h2 class="cart-title">Your Cart</h2>
+            <!-- Cart Content -->
+            <div class="cart-content">
+
+               
+            </div>
+            <!-- Total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price"></div>
+            </div>
+            <!-- Buy Button -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- close -->
+            <i class="fa-solid fa-xmark" id="close-cart" onclick="cartClose()"></i>
+        </div>
+
+        <div class="front-page-container">
+            <div class="left-side">
+                <h2 class="w3-animate-left">Style is always in fashion</h2>
+                <button class="w3-animate-left"><a href="brands.html">Shop Now!</a></button>
+            </div>
+            <div class="right-part">
+                <div class="logo-container w3-animate-zoom">
+                    <div class="images-container"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Popular Products-->
+        <div class="popular-products-container">
+            <div class="title" data-aos="fade-right">
+                <h1>Popular Products</h1>
+            </div>
+            <div class="product-items">
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="Hawk/1.webp">
+                    <div class="desciption">
+                        <div class="rating">
+                        </div>
+                        <p class="shoe-name">HAWK 2.0</p>
+                        <div class="price-cart">
+                            <p class="price">Php 2,200.00</p>
+                            <a href="brands.html#kdAuntPearl"><i class="fa-solid fa-bag-shopping add-to-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="image-container"><img src="Jansport/8.2.webp" alt=""></div>
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                        </div>
+                        <p class="bag-name">Jansport Hiking Backpack V2</p> 
+                        <div class="price-cart">
+                            <p class="price" price="3499">Php 3,499.00</p>
+                            <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="image-container"><img src="Jansport/7.webp" alt=""></div>
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                        </div>
+                        <p class="bag-name">Jansport Hiking Bag pack</p>
+                        <div class="price-cart">
+                            <p class="price" price="3200">Php 3,200.00</p>
+                            <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-card card" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <div class="image-container"><img src="Hawk/4.2.webp" alt=""></div>
+                    <div class="desciption">
+                        <div class="rating">
+                            <span><i class="fa-solid fa-star"></i>(4.6)</span>
+                        </div>
+                        <p class="bag-name">Hawk Watch</p>
+                        <div class="price-cart">
+                            <p class="price" price="1350">Php 1,350.00</p>
+                            <i class="fa-solid fa-bag-shopping add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!--Shipping and payment-->
+        <div class="shipping-container">
+            <div class="free-shipping">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h1>Free Shipping</h1>
+                <p>Save up on shipping for a minimum purchase of P3,000.</p>
+            </div>
+            <div class="cod">
+                <i class="fa-solid fa-coins"></i>
+                <h1>COD PAYMENT</h1>
+                <p>We only accept COD from any location</p>
+            </div>
+            <div class="contact-us-email">
+                <i class="fa-solid fa-envelope"></i>
+                <h1>CONTACT US</h1>
+                <p>We'd like to hear from you! Send us your feedback at<br>inquire@crameivrah.ph</p>
+            </div>
+        </div>
+
+        <!--About-->
+        <div class="about-container">
+            <div>
+                <h1>About Us</h1>
+                <p>The Bag Guys is the ultimate destination for all your active fashion needs. We are your ally in your style <br>
+                    Be confidence everyday with our curated products from world<br>
+                    renowned brands such as <b><a href="#">Hawk</a></b>, <b><a href="#">Jansport</a></b>, <b><a href="#">Puma</a></b>
+                    and <b><a href="#">Nike</a></b>!</p>
+            </div>
+        </div>
+        
+        <!--footer-->
+        <footer>
+            <div class="footer-contains">
+                <div class="logo">
+                    <img src="logo.jpg">
+                    <p>Style is always in fashion</p>
+                </div>
+                <div class="customer-channels">
+                    <h3>Customer Channels</h3>
+                    <p><a href="order and deliver.html">Order and Deliver</a></p>
+                </div>
+                <div class="terms-and-conditions">
+                    <h3>Terms and Condition</h3>
+                    <p><a href="brands.html#Hawk">Hawk<span></span></a></p>
+                    <p><a href="brands.html#Jansport">Jansport<span></span></a></p>
+                    <p><a href="brands.html#Puma">Puma<span></span></a></p>
+                    <p><a href="brands.html#Nike">Nike<span></span></a></p>
+                </div>
+                <div class="join-us">
+                    <h3>Join Us</h3>
+                    <p>Join our mailing list for updates</p>
+                    <div class="joined-message">Thank You for Joining!!</div>
+                    <div class="email-contain">
+                        <form>
+                            <input type="email" id="email-updates" placeholder="email@example.com" required>
+                            <button type="submit" onclick="joinUs()"><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <p>© 2023, <a href="#">CRAM EIVRAH</a>.</p>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="main.js"></script>
+    </body>
+</html>
